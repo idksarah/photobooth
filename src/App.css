@@ -1,0 +1,20 @@
+.sidebar {
+  background-color: #FFFEEC;
+  padding: 1em;
+  width: fit-content;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px #eadac9;
+}
+
+.home {
+  display: flex;
+}
+
+h2 {
+  background-color: #EDC163;
+  border-radius: 12px;
+  color: #FFFEEC;
+  padding: .5em;
+  width: fit-content;
+  cursor: pointer;
+}
