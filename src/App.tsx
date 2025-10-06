@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import './App.css'
-import Sheet from './Sheet'
-import Start from './Start'
-import Photobooth from './Photobooth'
-import Home from './Home'
+import Sheet from './components/Sheet'
+import Start from './pages/Start'
+import Photobooth from './pages/Photobooth'
+import Home from './pages/Home'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 function App() {

@@ -6,15 +6,19 @@
   box-shadow: 0 4px 6px #eadac9;
 }
 
+.sidebar p {
+  cursor: pointer;
+}
+
 .home {
   display: flex;
 }
 
-h2 {
-  background-color: #EDC163;
-  border-radius: 12px;
-  color: #FFFEEC;
-  padding: .5em;
-  width: fit-content;
+#photobooth {
+  height: 25em;
   cursor: pointer;
+}
+
+#photobooth:hover {
+  height: 26em;
 }
