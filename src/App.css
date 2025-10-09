@@ -1,9 +1,15 @@
-.sidebar {
+.sidebar, button {
   background-color: #FFFEEC;
   padding: 1em;
   width: fit-content;
   border-radius: 12px;
   box-shadow: 0 4px 6px #eadac9;
+  border: none;
+  margin: 1em;
+}
+
+button {
+  cursor: pointer;
 }
 
 .sidebar p {
@@ -20,5 +26,28 @@
 }
 
 #photobooth:hover {
-  height: 26em;
+  transform: rotate(3deg);
+}
+
+#example {
+  height: 15em;
+  margin-right: 2em;
+}
+
+#example:hover {
+  transform: rotate(-3deg);
+}
+
+#canvas {
+  display: none
+}
+
+#video {
+  width: 640px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.hidden {
+  display: none;
 }

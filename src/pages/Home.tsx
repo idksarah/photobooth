@@ -1,5 +1,6 @@
 import React, {useRef } from "react";
 import photobooth from "./../assets/photobooth.png";
+import example from "./../assets/example.jpg";
 
 import Sidebar from "../components/Sidebar";
 
@@ -13,15 +14,9 @@ export default function Home() {
     const width = 320;
     let height = 0;
 
-    const handleCapture = () => {
-        if (videoRef.current && canvasRef.current && photoRef.current) {
-            console.log("starting stream");
-            
-            streaming = true;
-            videoRef.current.muted = true;
-            videoRef.current.play();
-        }
-    };
+    const goToPhotobooth = () => {
+        window.location.href = "/photobooth";
+    }
     
     return (
         <div className="home">
@@ -30,7 +25,10 @@ export default function Home() {
             </section>
             <section className="main">
                 <h1>goonbooth</h1>
-                <img id="photobooth" src={photobooth}></img>           
+                <section style={{display: "flex", gap: "2em", alignItems: "center"}}>
+                    <img id="example" src={example}></img>
+                    <img id="photobooth" src={photobooth} onClick={goToPhotobooth}></img>
+                </section>           
             </section>
         </div>
     )

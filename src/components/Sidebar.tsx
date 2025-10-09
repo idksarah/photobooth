@@ -1,8 +1,11 @@
 export default function Sidebar() {
+    const goToHome = () => {
+        window.location.href = "/";
+    }
+
     return (
         <div className="sidebar">
-            <p>home</p>
-            <p>recents</p>
+            <p onClick={goToHome}>home</p>
         </div>
     )
 }
