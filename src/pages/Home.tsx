@@ -1,18 +1,18 @@
-import React, {useRef } from "react";
+// import React, {useRef } from "react";
 import photobooth from "./../assets/photobooth.png";
 import example from "./../assets/example.jpg";
 
 import Sidebar from "../components/Sidebar";
 
 export default function Home() {
-    let streaming = false;
+    // let streaming = false;
 
-    const videoRef = useRef<HTMLVideoElement>(null);
-    const canvasRef = useRef<HTMLCanvasElement>(null);
-    const photoRef = useRef<HTMLImageElement>(null);
+    // const videoRef = useRef<HTMLVideoElement>(null);
+    // const canvasRef = useRef<HTMLCanvasElement>(null);
+    // const photoRef = useRef<HTMLImageElement>(null);
 
-    const width = 320;
-    let height = 0;
+    // const width = 320;
+    // let height = 0;
 
     const goToPhotobooth = () => {
         window.location.href = "/photobooth";

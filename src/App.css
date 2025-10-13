@@ -20,6 +20,7 @@ button {
   display: flex;
 }
 
+/* home page photobooth */
 #photobooth {
   height: 25em;
   cursor: pointer;
@@ -50,4 +51,44 @@ button {
 
 .hidden {
   display: none;
+  height: 0;
+}
+
+.countdown {
+  position: absolute;
+  z-index: 4;
+  font-size: 5em;
+  color: #FFFEEC;
+  text-shadow: 2px 2px 4px #eadac9;
+}
+
+.camera {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.camera video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button { z-index: 5; position: relative;}
+
+.selection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#photoDisplay {
+  display: flex;
+  flex-direction: row;
+}
+
+.wholePhotosheet {
+  background-color: #FFFEEC;
+  padding: 1em 1em 3em 1em;
 }

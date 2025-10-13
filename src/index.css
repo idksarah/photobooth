@@ -23,8 +23,9 @@ h1 {
 h2 {
   background-color: #FFFEEC;
   border-radius: 12px;
+  font-size: 1.25rem;
   color: #EDC163;
-  padding: .5em;
+  padding: 1em;
   width: fit-content;
   cursor: pointer;
 }
